@@ -1,0 +1,217 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://source.unsplash.com/random/1920x1080") no-repeat center center/cover;
+}
+
+
+/* Contenedor principal */
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px; /* Ajusta el ancho si es necesario */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #fff; /* Fondo blanco */
+  padding: 10px;
+}
+
+.sidebar h2 {
+  text-align: left; /* Asegura que el título también esté alineado */
+  padding-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  text-align: left;
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: green;
+  color: white;
+}
+
+button:last-of-type {
+  background-color: red;
+  color: white;
+}
+
+/* Fondo oscuro cuando el modal está activo */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Oscurece toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del modal */
+.modal-content {
+  background: white;
+  width: 65%; /* Aumenta el ancho del modal */
+  max-width: 1000px; /* Máximo ancho */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Título centrado */
+.modal-content h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor para organizar los campos en dos columnas */
+.modal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 15px; /* Espacio entre los elementos */
+  align-items: center;
+}
+
+/* Estilo de etiquetas */
+.modal-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilo de inputs y selects */
+.modal-form input,
+.modal-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Botones centrados */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Botones */
+.modal-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons .guardar {
+  background-color: green;
+  color: white;
+}
+
+.modal-buttons .cancelar {
+  background-color: red;
+  color: white;
+}

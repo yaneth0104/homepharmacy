@@ -1,0 +1,11 @@
+.animated-title {
+    font-size: 3rem;
+    text-align: center;
+    animation: moveTitle 3s infinite alternate;
+  }
+  
+  @keyframes moveTitle {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+  }
+  
